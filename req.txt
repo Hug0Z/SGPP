@@ -1,0 +1,9 @@
+kopf
+pykube-ng
+pyyaml
+pyspark==3.3.2
+graphframes==0.6
+pandas
+python-dotenv
+matplotlib
+seaborn
