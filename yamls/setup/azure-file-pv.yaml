@@ -1,0 +1,21 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: "pv-azure-storage"
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - "ReadWriteMany"
+  persistentVolumeReclaimPolicy: Retain
+  csi:
+    driver: file.csi.azure.com
+    readOnly: false
+    volumeHandle: k8s
+    volumeAttributes:
+      storageAccount: "k8sfilestorage"
+      resourceGroup: "k8s_group"
+      shareName: "tenants"
+  mountOptions:
+    - dir_mode=0777
+    - file_mode=0777

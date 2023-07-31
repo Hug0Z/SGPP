@@ -1,0 +1,11 @@
+apiVersion: softwareengineering.solvinity.com/v1    #Don't change
+kind: serverless-g                                  #Don't change
+metadata:
+  name: example                                     # name of the program (has to be unique)
+  namespace: serverless-graphs                      #Don't change
+spec:
+  Tenant: "tenant"                                  # name of tenant/ customer
+  User: "user"                                      # name of user/ department
+  UserEmail: "john.doe@company.domain"              # email address to be notified
+  GraphLocation: "example"                          # location in mount point where python tenant program is located
+  NrWorkers: 3                                      # number of spark worker (default 2cpu, 5gb ram)
