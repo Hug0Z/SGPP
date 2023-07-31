@@ -3,6 +3,7 @@ SGPP
 ***This project is part of my master thesis, Software Engineering, and Green IT at the VU Amsterdam and UVA***
 
 **Author:** *Hugo Zwaan*
+
 **Date:** *Feb 2023/ Aug 2023*
 
 Serverless Graph Processing Platform is a program built using Kubernetes and Python. The program monitors a namespace for 'start' custom resources and when it finds new custom resources it adds a graph processing deployment to the cluster. The program cleans up after itself and the only setup for a deployment is the start custom resource. Via email, a notification is sent once the deployment is finished.
@@ -11,9 +12,13 @@ Serverless Graph Processing Platform is a program built using Kubernetes and Pyt
 <h2>links</h2>
 
 HNS = https://github.com/kubernetes-sigs/hierarchical-namespaces/blob/master/docs/user-guide/how-to.md
+
 HNS DOWNLOAD = https://github.com/kubernetes-sigs/hierarchical-namespaces/releases
+
 HNS INFO = https://kubernetes.io/blog/2020/08/14/introducing-hierarchical-namespaces/
+
 KOPF = https://kopf.readthedocs.io/en/stable/ 
+
 HELM = https://helm.sh/docs/intro/install/
 
 
